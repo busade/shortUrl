@@ -1,0 +1,215 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Damion', cursive;
+  /* background-color: #A4BE7B; */
+  background-color: #e2dddd;
+}
+
+
+.navbar {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #285430;
+  color: white;
+  font-family: 'Dosis', sans-serif;
+  
+}
+
+.brand-title {
+  font-size: 1.5rem;
+  margin: .5rem;
+}
+
+.navbar-links {
+  height: 100%;
+}
+
+.navbar-links ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+}
+
+.navbar-links li:hover {
+  background-color: #555;
+}
+
+.toggle-button {
+  position: absolute;
+  top: .75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+.parta{
+
+  background-color: #abc08a;
+  
+}
+button{
+  border-radius: 10px;
+  width: 50%;
+  height: 50%;
+  margin-left: 30%;
+  background-color: cadetblue;
+  text-decoration: none;
+    
+}
+.parta h3{
+  font-family: 'Damion', cursive;  font-size: 3rem;
+  text-align: center;
+  text-decoration-color: grey ; 
+  
+}
+.partb{
+  font-family: 'Exo 2', sans-serif;
+  
+}
+.partb form {
+  font-family: 'Dosis', sans-serif;
+  font-size: 2rem;
+  align-items: center;
+  text-align: center;
+}
+.partb form input{
+  width: 30%;
+  height: 50%;
+  border-radius: 1.5rem;
+}
+.partb form button{
+ border-radius: 0.5rem;
+ height: 1px;
+ width: 80px;
+ display: block;
+ line-height: 1.5;
+ margin-left: 50%;
+ padding: 1rem 1.75rem;
+ border: 1px solid ;
+ color: #212529;
+ text-align: center;
+ /* vertical-align: middle; */
+ cursor: pointer;
+ font-size: 0.875rem;
+ border-radius: 0.5rem;
+ transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+}
+.partb h3{
+  font-size: 2rem;
+  /* text-align: center; */
+  text-decoration-color: grey ; 
+  padding-left: 40%;
+}
+.partb .steep{
+   
+  font-size: 1.5rem;
+  display: flex;
+  text-decoration-color: grey ; 
+  align-self: center;
+  padding-left: 40%;
+  
+}
+.partb .steep p{
+  text-decoration: none;
+  color: black;
+  padding-left: 1rem;
+}
+.partb .offers{
+  font-size: 1.5rem;
+  display: flex;
+  text-decoration-color: grey ; 
+  align-self: center;
+  padding-left: 40%;
+}
+.partb .offers p{
+  display: inline-block;
+  text-decoration-color: grey ;
+  padding-left: 1.5rem;
+}
+
+.content-padding{
+  display: flex;
+  margin-left: 30%;
+}
+.content-padding .management, .content-padding .barcodes{
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  width: 30%;
+ 
+  align-content: center;
+  margin: 1rem;
+  padding: 1rem;
+
+}
+.footer{
+  background-color:#285430 ;
+  
+}
+.footer ul li{
+  display: flexbox;
+  list-style: none;
+}
+.footer .social{
+  height: max-content;
+  color: #ffff;
+}
+@media (max-width: 800px) {
+  .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .toggle-button {
+      display: flex;
+  }
+
+  .navbar-links {
+      display: none;
+      width: 100%;
+  }
+
+  .navbar-links ul {
+      width: 100%;
+      flex-direction: column;
+  }
+
+  .navbar-links ul li {
+      text-align: center;
+  }
+
+  .navbar-links ul li a {
+      padding: .5rem 1rem;
+  }
+
+  .navbar-links.active {
+      display: flex;
+  }
+}
